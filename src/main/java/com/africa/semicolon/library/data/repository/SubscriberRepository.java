@@ -1,7 +1,11 @@
 package com.africa.semicolon.library.data.repository;
 
-import com.africa.semicolon.library.data.model.User;
+import com.africa.semicolon.library.data.model.Subscriber;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface UserRepository extends MongoRepository<User, String> {
+import java.util.Optional;
+
+public interface SubscriberRepository extends MongoRepository<Subscriber, String> {
+    boolean existsByEmail(String email);
+    Subscriber findByEmail(String email);
 }

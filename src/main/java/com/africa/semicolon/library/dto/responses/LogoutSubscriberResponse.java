@@ -5,6 +5,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class DeleteBookResponse {
+public class LogoutSubscriberResponse {
     private String message;
+    private boolean isLoggedIn;
 }

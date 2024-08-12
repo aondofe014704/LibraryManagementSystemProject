@@ -1,6 +1,6 @@
 package com.africa.semicolon.library.data.model;
 
-public enum UserType {
+public enum Role {
     LIBRARIAN,
     READER
 }

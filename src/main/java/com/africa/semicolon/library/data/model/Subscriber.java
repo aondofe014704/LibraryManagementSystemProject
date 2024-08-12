@@ -15,15 +15,17 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document
-public class User {
+public class Subscriber {
     @Id
     private String id;
     private String username;
     private String email;
     private String password;
     private String phoneNumber;
+    private boolean isLoggedIn;
     private ReadingFocus readingFocus;
     private Reader reader;
+    private Role role;
     @DBRef
     private List<Book> listOfBooks;
 

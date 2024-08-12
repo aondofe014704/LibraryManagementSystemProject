@@ -1,2 +1,4 @@
-package com.africa.semicolon.library.service;public interface ReaderService {
+package com.africa.semicolon.library.service;
+
+public interface ReaderService {
 }

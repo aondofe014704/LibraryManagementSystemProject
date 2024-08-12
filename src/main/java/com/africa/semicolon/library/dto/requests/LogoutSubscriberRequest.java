@@ -5,8 +5,6 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class SearchBookRequest {
-    private String id;
-    private String title;
-    private String author;
+public class LogoutSubscriberRequest {
+    private String email;
 }
